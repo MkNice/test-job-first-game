@@ -71,7 +71,7 @@ export default class Intro extends Phaser.Scene {
         ease: "Quad.easeOut"
       });
     });
-    
+    man.clearAlpha().clearMask().clearTint();
   }
 }
 
