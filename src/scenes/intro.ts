@@ -12,8 +12,8 @@ export default class Intro extends Phaser.Scene {
     this.load.image('bg-black', './backgrounds/Rectangle-black.png');
 
     this.load.image('man', './characters/man/man.png');
-    this.load.image('woman-casual', './characters/woman/woman-casual.png');
-    this.load.image('woman-casual-2', './characters/woman/woman-casual-2.png');
+    this.load.image('woman-casual', './characters/woman/casual/woman-casual.png');
+    this.load.image('woman-casual-2', './characters/woman/casual/woman-casual-2.png');
 
     this.load.image('message-man', './messages/message-man.png');
     this.load.image('message-woman', './messages/message-woman.png');

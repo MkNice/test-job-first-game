@@ -3,13 +3,35 @@ export default class MainGame extends Phaser.Scene {
     super('MainGame');
   }
   preload() {
-    this.load.image('progress-bar', './other-blocks/progress-bar.png');
-    this.load.image('woman-dress', './characters/woman/woman-dress.png');
-    this.load.image('woman-beach-outfit', './characters/woman/woman-BOutfit.png');
+    this.load.image('progress-bar', './other-blocks/progress-bar/progress-bar.png');
+    this.load.image('progress-bar-25', './other-blocks/progress-bar/progress-bar-25.png');
+    this.load.image('progress-bar-50', './other-blocks/progress-bar/progress-bar-50.png');
+    this.load.image('progress-bar-75', './other-blocks/progress-bar/progress-bar-75.png');
 
-    this.load.image('progress-bar-25', './other-blocks/progress-bar-25.png');
+    this.load.image('w-dress', './characters/woman/dress/woman-dress.png');
+
+    this.load.image('w-dress-with-brown-bag', './characters/woman/dress/dress-with-brown-bag.png');
+    this.load.image('w-dress-with-brown-bag-glasses', './characters/woman/dress/dress-with-brown-bag-glasses.png');
+    this.load.image('w-dress-with-brown-bag-bijouterie', './characters/woman/dress/dress-with-brown-bag-bijouterie-2.png');
+
+    this.load.image('w-dress-with-blue-bag', './characters/woman/dress/dress-with-blue-bag.png');
+    this.load.image('w-dress-with-blue-bag-glasses', './characters/woman/dress/dress-with-blue-bag-glasses.png');
+    this.load.image('w-dress-with-blue-bag-bijouterie', './characters/woman/dressdress-with-blue-bag-bijouterie-2.png');
+
+    this.load.image('w-beach-outfit', './characters/woman/boutfit/woman-BOutfit.png');
+
+    this.load.image('w-BOutfit-with-blue-bag', './characters/woman/boutfit/BOutfit-with-blue-bag.png');
+    this.load.image('w-BOutfit-with-blue-bag-glasses', './characters/woman/boutfit/BOutfit-with-blue-bag-glasses.png');
+    this.load.image('w-BOutfit-with-blue-bag-bijouterie', './characters/woman/boutfit/BOutfit-with-blue-bag-bijouterie-1.png');
+
+    this.load.image('w-BOutfit-with-brown-bag', './characters/woman/boutfit/BOutfit-with-brown-bag.png');
+    this.load.image('w-BOutfit-with-brown-bag-glasses', './characters/woman/boutfit/BOutfit-with-brown-bag-glasses.png');
+    this.load.image('w-BOutfit-with-brown-bag-bijouterie', './characters/woman/boutfit/BOutfit-with-brown-bag-bijouterie-1.png');
+
+
   }
   create() {
+    // Сделать массив картинок
     const shape: Phaser.Geom.Rectangle = new Phaser.Geom.Rectangle(125, 130, 140, 180);
     const bg = this.add.image(0, 0, 'bg-blur').setOrigin(0, 0);
     const woman = this.add.image(0, 0, 'woman-casual-2');

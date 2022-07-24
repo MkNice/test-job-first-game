@@ -12,12 +12,12 @@ export default class TestScene extends Phaser.Scene {
 
     this.load.image('dress', './clothes/pink-dress.png');
     this.load.image('beach-outfit', './clothes/beach-outfit.png');
-    this.load.image('rectangle-clother-first', './other-blocks/rectangle-for-clother.png');
-    this.load.image('rectangle-clother-second', './other-blocks/rectangle-for-clother.png');
-    this.load.image('woman-casual-2', './characters/woman/woman-casual-2.png');
+    this.load.image('rectangle-clother-first', './clothes/rectangle-for-clother.png');
+    this.load.image('rectangle-clother-second', './clothes/rectangle-for-clother.png');
+    this.load.image('woman-casual-2', './characters/woman/casual/woman-casual-2.png');
 
-    this.load.image('recangle-text', './other-blocks/rectangle-for-text.png');
-    this.load.image('text', './other-blocks/txt-dress.png');
+    this.load.image('recangle-text', './other-blocks/txt/rectangle-for-text.png');
+    this.load.image('text', './other-blocks/txt/txt-dress.png');
     this.load.image('hand', './other-blocks/hand.png');
   }
   create() {
