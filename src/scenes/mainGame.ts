@@ -1,8 +1,13 @@
 export default class MainGame extends Phaser.Scene {
+
   constructor() {
     super('MainGame');
   }
+
   preload() {
+    this.load.image('bg-beach', './backgrounds/background-beach.png');
+    this.load.image('bg-ferry', './backgrounds/background-ferry.png');
+
     this.load.image('progress-bar', './other-blocks/progress-bar/progress-bar.png');
     this.load.image('progress-bar-25', './other-blocks/progress-bar/progress-bar-25.png');
     this.load.image('progress-bar-50', './other-blocks/progress-bar/progress-bar-50.png');
@@ -31,7 +36,8 @@ export default class MainGame extends Phaser.Scene {
 
   }
   create() {
-    // Сделать массив картинок
+    const choosesPlayer = [];
+    const 
     const shape: Phaser.Geom.Rectangle = new Phaser.Geom.Rectangle(125, 130, 140, 180);
     const bg = this.add.image(0, 0, 'bg-blur').setOrigin(0, 0);
     const woman = this.add.image(0, 0, 'woman-casual-2');
