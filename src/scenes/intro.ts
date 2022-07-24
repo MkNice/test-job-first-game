@@ -9,11 +9,11 @@ export default class Intro extends Phaser.Scene {
   public preload() {
     this.load.image('bg-blur', './backgrounds/background-with-blur.png');
     this.load.image('bg-none-blur', './backgrounds/background-without-blur.png');
-    this.load.image('bg-black', './backgrounds/Rectangle-black.png');
+    this.load.image('bg-black', './backgrounds/rectangle-black.png');
 
     this.load.image('man', './characters/man/man.png');
-    this.load.image('woman-casual', './characters/woman/casual/woman-casual.png');
-    this.load.image('woman-casual-2', './characters/woman/casual/woman-casual-2.png');
+    this.load.image('w-casual', './characters/woman/casual/woman-casual.png');
+    this.load.image('w-casual-2', './characters/woman/casual/woman-casual-2.png');
 
     this.load.image('message-man', './messages/message-man.png');
     this.load.image('message-woman', './messages/message-woman.png');
@@ -52,7 +52,7 @@ export default class Intro extends Phaser.Scene {
         yoyo: 1,
         hold: 300,
         onYoyo: () => {
-          man.setTexture('woman-casual');
+          man.setTexture('w-casual');
           messageMan.setTexture('message-woman');
           backgroundNoneBlur.setTexture('bg-blur');
         },
@@ -67,7 +67,7 @@ export default class Intro extends Phaser.Scene {
         yoyo: 1,
         hold: 300,
         onYoyo: () => {
-          man.setTexture('woman-casual-2').setOrigin(-0.32, -0.035);
+          man.setTexture('w-casual-2').setOrigin(-0.32, -0.035);
           messageMan.setScale(0);
         },
         ease: "Quad.easeOut"

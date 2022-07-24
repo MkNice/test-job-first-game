@@ -8,7 +8,7 @@ export default class TestScene extends Phaser.Scene {
 
   preload() {
     this.load.image('bg-blur', './backgrounds/background-with-blur.png');
-    this.load.image('bg-black', './backgrounds/Rectangle-black.png');
+    this.load.image('bg-black', './backgrounds/rectangle-black.png');
 
     this.load.image('dress', './clothes/pink-dress.png');
     this.load.image('beach-outfit', './clothes/beach-outfit.png');
@@ -20,6 +20,7 @@ export default class TestScene extends Phaser.Scene {
     this.load.image('text', './other-blocks/txt/txt-dress.png');
     this.load.image('hand', './other-blocks/hand.png');
   }
+
   create() {
     const shape: Phaser.Geom.Rectangle = new Phaser.Geom.Rectangle(125, 130, 140, 180);
     const hand = this.add
